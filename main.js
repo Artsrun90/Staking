@@ -1,21 +1,21 @@
 function changePlanValues(val) {
     var dalyIncome;
     if (val >= 0 && val <= 999) {
-        dalyIncome = (((val*100)/15)/30).toFixed(1)
+        dalyIncome = (((val/100)*15)/30).toFixed(1)
         $('#plan-name').text('STANDART');
         $('#plan-cost').text('100-999');
         $('#plan-time').text('15');
         $('#daly-income').text(dalyIncome);
         $('#plan-img-src').attr("src","img/standart.png");
     } else if(val >= 1000 && val <= 4999) {
-        dalyIncome = (((val*100)/20)/30).toFixed(1)
+        dalyIncome = (((val/100)*20)/30).toFixed(1)
         $('#plan-name').text('GOLD');
         $('#plan-cost').text('1000-4999');
         $('#plan-time').text('20');        
         $('#daly-income').text(dalyIncome);
         $('#plan-img-src').attr("src","img/gold.png");
     } else{
-        dalyIncome = (((val*100)/25)/30).toFixed(1)
+        dalyIncome = (((val/100)*25)/30).toFixed(1)
         $('#plan-name').text('PLATINUM');
         $('#plan-cost').text('5000');
         $('#plan-time').text('25');
