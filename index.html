@@ -19,7 +19,7 @@
     <div class="container staking-title">
         <div class="row d-flex justify-content-between">
                 <h3>Defi Staking</h3>
-                <button class="btn"><i class="fas fa-download"></i>Презентация DeFi Стейкинга</button>         
+                <button class="btn present"><i class="fas fa-download"></i>Презентация DeFi Стейкинга</button>         
         </div>
     </div>
 
@@ -29,20 +29,27 @@
                 <input type="range" min="100" max="5000" value="0" class="slider"  oninput="updateCostInput(this.value);">
                 <div class="container">
                     <div class="row range-values">
-                        <p class="col-md-2">100</p>
-                        <p class="col-md-2">1000</p>
-                        <p class="col-md-2">2500</p>
-                        <p class="col-md-2">3000</p>
-                        <p class="col-md-2">4000</p>
-                        <p class="col-md-2">>5000</p>
+                        <p class="col-2 col-md-2">100</p>
+                        <p class="col-2 col-md-2">1000</p>
+                        <p class="col-2 col-md-2">2500</p>
+                        <p class="col-2 col-md-2">3000</p>
+                        <p class="col-2 col-md-2">4000</p>
+                        <p class="col-2 col-md-2">>5000</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <h2>25% в месяц</h2>
+            <div id="cost-iitle" class="col-md-3 cost-iitle">
+                <h2>Ежедневный доход: <span id="daly-income" class="daly-income">0.0</span></h2>
             </div>
-            <div class="col-md-3">
+            <div id="cost-input" class="col-md-3 cost-input">
                 <span class="dollar"><input type="text" name="" id="cost" class="cost" placeholder="Введите сумму"></span>                
+            </div>
+            <div class="container ataptive-p">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                     architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                      sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                       voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia </p>
             </div>
         </div>
     </div>
@@ -57,23 +64,25 @@
 
     <div class="container shadow plan">
         <div class="row plan-items">
-            <div class="col-md-1">
-                <img src="img/standart.png" height="58px" alt="">
+            <div class="col-4 col-md-1">
+                <div class="plan-img">
+                    <img id="plan-img-src" src="img/standart.png" height="58px" alt="">
+                </div>
             </div>
-            <div class="col-md-7">
+            <div class="col-6 col-md-7">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-12 col-md-4">
                         <h2 id="plan-name" class="plan-h2">STANDART</h2>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-12 col-md-4">
                         <h2 class="plan-h2"><span id="plan-cost">100-999</span><span class="card-p-s"> $</span></h2>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-12 col-md-4">
                         <h2 class="plan-procent"><span id="plan-time">15</span>% в месяц</h2>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-12 col-md-4">
                 <button id="order" class="btn btn-blue btn-order">Оформить</button>              
             </div>
         </div>
@@ -87,11 +96,11 @@
                     <div class="card">
                         <div id="card-0" class="container">
                             <div class="row">
-                                <div class="col-md-4 text-center p-4">
+                                <div class="col-4 col-md-4 text-center p-4">
                                     <img src="img/standart.png" width="60px" alt="">
                                     <p id="active" class="pd">активен</p>
                                 </div>
-                                <div class="col-md-8 mt-3">
+                                <div class="col-8 col-md-8 mt-3">
                                     <h2>STANDART</h2>
                                     <h3 class="card-p-s">Получено</h3>
                                     <h3><b><span id="geted">20000</span></b> $</h3>
@@ -107,11 +116,11 @@
                     <div class="card">
                         <div id="card-1" class="container">
                             <div class="row">
-                                <div class="col-md-4 text-center p-4">
+                                <div class="col-4 col-md-4 text-center p-4">
                                     <img src="img/gold.png" width="60px" alt="">
                                     <p id="active" class="pd">активен</p>
                                 </div>
-                                <div class="col-md-8 mt-3">
+                                <div class="col-8 col-md-8 mt-3">
                                     <h2>GOLD</h2>
                                     <h3 class="card-p-s">Получено</h3>
                                     <h3><b><span id="geted">20000</span></b> $</h3>
@@ -127,11 +136,11 @@
                     <div class="card">
                         <div id="card-2" class="container">
                             <div class="row">
-                                <div class="col-md-4 text-center p-4">
+                                <div class="col-4 col-md-4 text-center p-4">
                                     <img src="img/platinum.png" width="60px" alt="">
                                     <p id="active" class="pd">активен</p>
                                 </div>
-                                <div class="col-md-8 mt-3">
+                                <div class="col-8 col-md-8 mt-3">
                                     <h2>PLATINUM</h2>
                                     <h3 class="card-p-s">Получено</h3>
                                     <h3><b><span id="geted">20000</span></b> $</h3>

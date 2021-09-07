@@ -70,6 +70,9 @@ button:focus {
     border-radius: 10px;
     filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.25));
 }
+.ataptive-p {
+    display: none;
+}
 .calculiator{
     height: 96px;
 }
@@ -77,6 +80,9 @@ button:focus {
 .calculiator-items{
     margin-top: 20px;
     align-items: center;
+}
+.calculiator-items h2{
+    font-size: 20px;
 }
 
 .slider {
@@ -219,4 +225,104 @@ font-size: 24px;
     text-align: center;    
     color: #FFFFFF !important;
     margin-top: 40px;
+}
+
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 343px;  
+    }
+    .present, .staking-title {
+        margin-top: 50px;
+    }
+    .calculiator {
+        height: 676px;
+    }
+
+    #cost-input{
+        order: 1;
+    }
+    #cost-iitle{
+        order: 2;
+    }
+    .cost-input{
+        margin-top: 50px;
+    }
+    .cost-iitle{
+        margin-top: 40px;
+        text-align: center;
+    }
+    .text-block {
+        display: none;
+    }
+    .ataptive-p {
+        display: block;
+    }
+    .ataptive-p p{
+        font-weight: normal;
+        font-size: 16px;
+        color: #556171 !important;
+        margin-top: 25px;
+        text-align: center;
+        line-height: 36px;
+    }
+    .ataptive-p {
+        order: 3;
+    }
+
+    .plan{
+        height: 167px;        
+    }
+    .plan-items{
+      top: 0;
+      left: 0;
+      margin-top: 0px;
+      height: 100%;
+      border-radius: 10px;
+      background-image: linear-gradient(#6352E4, #51A5ED);
+    }
+    .plan-items h2,span{
+        color: white !important;
+        font-size: 24px !important;
+    }
+    .btn-order{
+        margin-top: 50px;
+        margin-left: -16px;
+        width: 343px;
+        height: 47px;
+        background-color: #F95757;
+    }
+
+    .plan-img{
+        width: 88px;
+        height: 88px;
+        background-color: white;
+        border-radius: 50%;
+    }
+    .plan-img img{
+        margin-left: 12px;
+        margin-top: 12px;
+    }
+    .my-stekink{
+        margin-top: 150px;
+    }
+
+    .plan-card{
+        margin-top: 40px;
+    }
+    .card{
+        width: 343px;
+    }
+    .card span{
+        color: #556171 !important;
+    }
+    .card-btn{
+        width: 343px;
+    }
+    .pd{
+        margin-top: 80px;
+    }
+    .daly-income{
+        color: #688bff !important;
+    }
 }
