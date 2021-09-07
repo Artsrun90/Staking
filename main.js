@@ -31,6 +31,17 @@ function updateCostInput(val) {
 
 $(document).on('input', '#cost', function () {
     var value = this.value;
+    if (value.length > 6) {
+        alert("Максимальная сумма 999999.");
+        $('#daly-income').text('0.0');
+        $('#plan-name').text('STANDART');
+        $('#plan-cost').text('100-999');
+        $('#plan-time').text('15');
+        $('#plan-img-src').attr("src","img/standart.png");
+        $('.slider').val("0"); 
+        this.value = '';
+        return;
+    }
     if (!value) {
         $('.slider').val("0");  
     }else{

@@ -30,6 +30,12 @@ button:focus {
     outline: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .btn{
     color: white;
     background-color: #F95757;
@@ -225,6 +231,9 @@ font-size: 24px;
     text-align: center;    
     color: #FFFFFF !important;
     margin-top: 40px;
+}
+.cost-iitle{
+    min-width: 300px;
 }
 
 
