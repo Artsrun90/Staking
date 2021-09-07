@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="   style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container staking-title">
+        <div class="row d-flex justify-content-between">
+                <h3>Defi Staking</h3>
+                <button class="btn"><i class="fas fa-download"></i>Презентация DeFi Стейкинга</button>         
+        </div>
+    </div>
+
+    <div class="container shadow calculiator">
+        <div class="row calculiator-items">
+            <div class="col-md-5 slidecontainer">
+                <input type="range" min="100" max="5000" value="0" class="slider"  oninput="updateCostInput(this.value);">
+                <div class="container">
+                    <div class="row range-values">
+                        <p class="col-md-2">100</p>
+                        <p class="col-md-2">1000</p>
+                        <p class="col-md-2">2500</p>
+                        <p class="col-md-2">3000</p>
+                        <p class="col-md-2">4000</p>
+                        <p class="col-md-2">>5000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h2>25% в месяц</h2>
+            </div>
+            <div class="col-md-3">
+                <span class="dollar"><input type="text" name="" id="cost" class="cost" placeholder="Введите сумму"></span>                
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center shadow text-block">
+        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+              architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+               sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia </p>
+    </div>
+
+    <div class="container shadow plan">
+        <div class="row plan-items">
+            <div class="col-md-1">
+                <img src="img/standart.png" height="58px" alt="">
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 id="plan-name" class="plan-h2">STANDART</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="plan-h2"><span id="plan-cost">100-999</span><span class="card-p-s"> $</span></h2>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="plan-procent"><span id="plan-time">15</span>% в месяц</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <button id="order" class="btn btn-blue btn-order">Оформить</button>              
+            </div>
+        </div>
+    </div>
+    <div class="container my-stekink">
+        <h3>Мои Стейкинги</h3>
+    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+                <div class="plan-card">
+                    <div class="card">
+                        <div id="card-0" class="container">
+                            <div class="row">
+                                <div class="col-md-4 text-center p-4">
+                                    <img src="img/standart.png" width="60px" alt="">
+                                    <p id="active" class="pd">активен</p>
+                                </div>
+                                <div class="col-md-8 mt-3">
+                                    <h2>STANDART</h2>
+                                    <h3 class="card-p-s">Получено</h3>
+                                    <h3><b><span id="geted">20000</span></b> $</h3>
+                                    <p>оформлен <span id="placed">11.20.2020</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="card-btn-0" class="btn btn-blue card-btn">Расторгнуть</button>
+
+                </div>
+                <div class="plan-card">
+                    <div class="card">
+                        <div id="card-1" class="container">
+                            <div class="row">
+                                <div class="col-md-4 text-center p-4">
+                                    <img src="img/gold.png" width="60px" alt="">
+                                    <p id="active" class="pd">активен</p>
+                                </div>
+                                <div class="col-md-8 mt-3">
+                                    <h2>GOLD</h2>
+                                    <h3 class="card-p-s">Получено</h3>
+                                    <h3><b><span id="geted">20000</span></b> $</h3>
+                                    <p>оформлен <span id="placed">11.20.2020</span></p>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <button id="card-btn-1" class="btn btn-blue card-btn">Расторгнуть</button>
+
+                </div>
+                <div class="plan-card">
+                    <div class="card">
+                        <div id="card-2" class="container">
+                            <div class="row">
+                                <div class="col-md-4 text-center p-4">
+                                    <img src="img/platinum.png" width="60px" alt="">
+                                    <p id="active" class="pd">активен</p>
+                                </div>
+                                <div class="col-md-8 mt-3">
+                                    <h2>PLATINUM</h2>
+                                    <h3 class="card-p-s">Получено</h3>
+                                    <h3><b><span id="geted">20000</span></b> $</h3>
+                                    <p>оформлен <span id="placed">11.20.2020</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="card-btn-2" class="btn btn-blue card-btn">Расторгнуть</button>
+                </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
